@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API_KEY = "860634c42ed74b8ca094da9859ec77f5";
-const BASE_URL = "https://newsapi.org/v2/everything?q=apple&from=2025-05-23&to=2025-05-23&sortBy=popularity&apiKey=860634c42ed74b8ca094da9859ec77f5";
+const BASE_URL = "https://newsapi.org/v2/everything?sources=techcrunch&apiKey=860634c42ed74b8ca094da9859ec77f5";
 
 export const fetchNews = async () => {
   try {
