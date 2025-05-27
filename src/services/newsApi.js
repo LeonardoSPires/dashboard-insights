@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const API_KEY = "860634c42ed74b8ca094da9859ec77f5";
-const BASE_URL = "https://newsapi.org/v2/everything?sources=techcrunch&apiKey=860634c42ed74b8ca094da9859ec77f5";
+const API_KEY = import.meta.env.VITE_NEWS_API_KEY;
+const BASE_URL = `https://newsapi.org/v2/everything?sources=techcrunch`;
 
 export const fetchNews = async () => {
   try {
